@@ -62,16 +62,24 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Logo */}
-          <button onClick={() => navTo("#home")} className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-              <span className="text-white font-bold text-sm">IBC</span>
+          <button onClick={() => navTo("#home")} className="flex items-center gap-3 group">
+            {/* Three-bar mark */}
+            <div className="flex flex-col gap-[5px] group-hover:opacity-80 transition-opacity">
+              <div className="h-[7px] w-9 rounded-sm" style={{ backgroundColor: "#5b2d8e" }}></div>
+              <div className="h-[7px] w-9 rounded-sm" style={{ backgroundColor: "#5b2d8e" }}></div>
+              <div className="h-[7px] w-9 rounded-sm" style={{ backgroundColor: "#5b2d8e" }}></div>
             </div>
-            <span
-              className="text-xl font-bold bg-gradient-to-r from-purple-700 to-pink-600 bg-clip-text text-transparent"
-              style={{ fontFamily: "var(--font-playfair)" }}
-            >
-              Ing&apos;s Body Care
-            </span>
+            <div className="flex flex-col leading-tight">
+              <span
+                className="text-lg font-bold"
+                style={{ fontFamily: "var(--font-playfair)", color: "#5b2d8e" }}
+              >
+                Ing&apos;s Body Care
+              </span>
+              <span className="text-[11px] font-medium tracking-wide" style={{ color: "#5b2d8e", opacity: 0.75 }}>
+                Schoonheids- &amp; Pedicuresalon
+              </span>
+            </div>
           </button>
 
           {/* Desktop Nav */}
