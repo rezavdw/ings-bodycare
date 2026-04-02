@@ -204,8 +204,8 @@ export default function Footer() {
                 </p>
                 <div className="pt-2">
                   <p className="text-purple-400 text-xs uppercase tracking-wide mb-1">Openingstijden</p>
-                  <p>Ma &ndash; Vr: 09:00 &ndash; 22:00</p>
-                  <p>Za &amp; Zo: 09:00 &ndash; 16:00</p>
+                  <p>Ma t/m Vr: 09:00 tot 22:00</p>
+                  <p>Za &amp; Zo: 09:00 tot 16:00</p>
                 </div>
               </div>
             </div>

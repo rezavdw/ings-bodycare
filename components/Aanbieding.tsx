@@ -35,26 +35,23 @@ export default function Aanbieding() {
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
-          Complete Huidverbetering
+          Aanbieding
           <br />
-          <span className="text-pink-300">Pakket Maart 2026</span>
+          <span className="text-pink-300">April 2026</span>
         </h2>
 
         {/* Description */}
         <p className="text-white/80 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-          Profiteer deze maand van ons exclusieve huidverbeteringspakket. Een
-          diepgaande gezichtsbehandeling (90 min) gecombineerd met een
-          ontspannende lichaamsmassage (45 min) voor een totale verwenervaring.
-          Inclusief gratis huidanalyse en gepersonaliseerd huidverzorgingsadvies.
+          Ontvang de hele maand april 10% korting op de nachtcrème van Mineral Skin Cosmetics.
+          Laat je huid herstellen terwijl je slaapt!
         </p>
 
-        {/* Treatment list */}
-        <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
+        {/* Product highlights */}
+        <div className="flex flex-col sm:flex-row gap-3 justify-center mb-10">
           {[
-            "✓ Gezichtsbehandeling (90 min)",
-            "✓ Lichaamsmassage (45 min)",
-            "✓ Huidanalyse",
-            "✓ Adviesgesprek",
+            "✓ Hydrateert, regenereert en revitaliseert de huid",
+            "✓ Een rijke crème te gebruiken als masker",
+            "✓ Unieke formule van vitamine E en 'superfruit'-ingrediënten",
           ].map((item) => (
             <div
               key={item}
@@ -65,23 +62,10 @@ export default function Aanbieding() {
           ))}
         </div>
 
-        {/* Price */}
-        <div className="flex items-center justify-center gap-5 mb-10">
-          <div className="text-center">
-            <p className="text-white/50 text-sm mb-1">Normale prijs</p>
-            <p className="text-white/60 text-2xl font-bold line-through">
-              €175
-            </p>
-          </div>
-          <div className="w-px h-12 bg-white/20" />
-          <div className="text-center">
-            <p className="text-pink-300 text-sm font-semibold mb-1">
-              Aanbieding prijs
-            </p>
-            <p className="text-white text-4xl font-bold">€125</p>
-          </div>
-          <div className="bg-yellow-400 text-yellow-900 font-bold text-sm px-3 py-1.5 rounded-full shadow-lg">
-            29% korting
+        {/* Discount badge */}
+        <div className="flex items-center justify-center mb-10">
+          <div className="bg-yellow-400 text-yellow-900 font-bold text-xl px-6 py-3 rounded-full shadow-lg">
+            10% korting
           </div>
         </div>
 
@@ -93,7 +77,7 @@ export default function Aanbieding() {
           Profiteer van deze aanbieding
         </button>
         <p className="text-white/50 text-sm">
-          Geldig t/m 31 maart 2026. Op = op.
+          Geldig t/m 30 april 2026.
         </p>
       </div>
     </section>

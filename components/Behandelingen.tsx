@@ -257,7 +257,7 @@ export default function Behandelingen() {
 
   const { days, startOffset } = buildCalendar(calYear, calMonth, booking.date, booking.staff);
   const timeSlots = getTimeSlots(booking.staff, booking.date);
-  const stepLabels = ["", "Stap 1 van 3 — Medewerker", "Stap 2 van 3 — Datum & tijd", "Stap 3 van 3 — Uw gegevens", "Afgerond"];
+  const stepLabels = ["", "Stap 1 van 3: Medewerker", "Stap 2 van 3: Datum & tijd", "Stap 3 van 3: Uw gegevens", "Afgerond"];
   const stepTitles = ["", "Kies een medewerker", "Kies datum & tijd", "Uw gegevens", "Bevestiging"];
 
   const clockIcon = (

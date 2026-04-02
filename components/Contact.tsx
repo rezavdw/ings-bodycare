@@ -175,12 +175,12 @@ export default function Contact() {
                     <p className="font-semibold text-gray-900 text-sm mb-1">Openingstijden</p>
                     <div className="space-y-0.5 text-sm text-gray-600">
                       <div className="flex justify-between gap-8">
-                        <span>Maandag &ndash; Vrijdag</span>
-                        <span className="font-medium text-gray-800">09:00 &ndash; 22:00</span>
+                        <span>Maandag t/m Vrijdag</span>
+                        <span className="font-medium text-gray-800">09:00 tot 22:00</span>
                       </div>
                       <div className="flex justify-between gap-8">
                         <span>Zaterdag &amp; Zondag</span>
-                        <span className="font-medium text-gray-800">09:00 &ndash; 16:00</span>
+                        <span className="font-medium text-gray-800">09:00 tot 16:00</span>
                       </div>
                     </div>
                   </div>
