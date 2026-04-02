@@ -62,24 +62,12 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Logo */}
-          <button onClick={() => navTo("#home")} className="flex items-center gap-3 group">
-            {/* Three-bar mark */}
-            <div className="flex flex-col gap-[5px] group-hover:opacity-80 transition-opacity">
-              <div className="h-[7px] w-9 rounded-sm" style={{ backgroundColor: "#5b2d8e" }}></div>
-              <div className="h-[7px] w-9 rounded-sm" style={{ backgroundColor: "#5b2d8e" }}></div>
-              <div className="h-[7px] w-9 rounded-sm" style={{ backgroundColor: "#5b2d8e" }}></div>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span
-                className="text-lg font-bold"
-                style={{ fontFamily: "var(--font-playfair)", color: "#5b2d8e" }}
-              >
-                Ing&apos;s Body Care
-              </span>
-              <span className="text-[11px] font-medium tracking-wide" style={{ color: "#5b2d8e", opacity: 0.75 }}>
-                Schoonheids- &amp; Pedicuresalon
-              </span>
-            </div>
+          <button onClick={() => navTo("#home")} className="group">
+            <img
+              src="/logo.png"
+              alt="Ing's Body Care"
+              className="h-12 w-auto group-hover:opacity-80 transition-opacity"
+            />
           </button>
 
           {/* Desktop Nav */}
