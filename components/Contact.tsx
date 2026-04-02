@@ -5,8 +5,19 @@ import { useState } from "react";
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const data = new FormData(e.currentTarget);
+    const naam = data.get("naam") as string;
+    const email = data.get("email") as string;
+    const telefoon = (data.get("telefoon") as string) || "-";
+    const bericht = data.get("bericht") as string;
+
+    const subject = encodeURIComponent(`Bericht van ${naam}`);
+    const body = encodeURIComponent(
+      `Naam: ${naam}\nE-mail: ${email}\nTelefoon: ${telefoon}\n\nBericht:\n${bericht}`
+    );
+    window.location.href = `mailto:info@ingsbodycare.nl?subject=${subject}&body=${body}`;
     setSubmitted(true);
   };
 

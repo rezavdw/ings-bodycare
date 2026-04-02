@@ -36,16 +36,16 @@ export default function SalonImpressie() {
 
           {/* Nagels */}
           <div className="col-span-1 row-span-1 relative overflow-hidden rounded-2xl group">
-            <img src="/salon/nagels.jpg" alt="Nagelverzorging" className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+            <img src="/salon/wenkbrauwen.jpg" alt="Nagels lakken" className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <span className="text-white font-medium text-sm bg-white/20 backdrop-blur-sm rounded-full px-3 py-1">Nagelverzorging</span>
+              <span className="text-white font-medium text-sm bg-white/20 backdrop-blur-sm rounded-full px-3 py-1">Nagels lakken</span>
             </div>
           </div>
 
           {/* Wenkbrauwen */}
           <div className="col-span-1 row-span-1 relative overflow-hidden rounded-2xl group">
-            <img src="/salon/wenkbrauwen.jpg" alt="Wenkbrauwen & wimpers" className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+            <img src="/salon/nagels.jpg" alt="Wenkbrauwen & wimpers" className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <span className="text-white font-medium text-sm bg-white/20 backdrop-blur-sm rounded-full px-3 py-1">Wenkbrauwen</span>

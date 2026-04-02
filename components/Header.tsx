@@ -92,7 +92,7 @@ export default function Header() {
               </button>
             ))}
             <button
-              onClick={() => navTo("#contact")}
+              onClick={() => navTo("#behandelingen")}
               className="ml-2 px-4 py-2 rounded-full bg-gray-900 text-white text-sm font-semibold hover:bg-purple-700 hover:shadow-lg transition-all duration-200"
             >
               Boek afspraak
@@ -152,7 +152,7 @@ export default function Header() {
             </button>
           ))}
           <button
-            onClick={() => handleNavClick("#contact")}
+            onClick={() => handleNavClick("#behandelingen")}
             className="mt-2 px-4 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold hover:shadow-lg transition-all"
           >
             Boek afspraak
