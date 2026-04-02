@@ -5,9 +5,9 @@ import { useState } from "react";
 const DAY_NAMES = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"];
 
 const STAFF_PINS: Record<string, string> = {
-  "Ingrid Slieker": "1234",
-  "Natasja Hoefakker": "2345",
-  "Janine Koning": "3456",
+  "Ingrid Slieker": "8347",
+  "Natasja Hoefakker": "6129",
+  "Janine Koning": "4758",
 };
 
 type Avail = Record<number, { on: boolean; start: string; end: string }>;
@@ -337,7 +337,6 @@ export default function Footer() {
                           <span
                             className="absolute cursor-pointer inset-0 rounded-[22px] transition-colors duration-200"
                             style={{ background: spAvail[d]?.on ? "#7c3aed" : "#d1d5db" }}
-                            onClick={() => spToggleDay(d, !(spAvail[d]?.on ?? true))}
                           >
                             <span
                               className="absolute w-4 h-4 bg-white rounded-full bottom-[3px] transition-transform duration-200"
